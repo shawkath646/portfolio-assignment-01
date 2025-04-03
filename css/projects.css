@@ -1,0 +1,138 @@
+.profile-links {
+    text-align: center;
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin: 40px auto;
+}
+
+.profile-links h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #ffeb3b;
+}
+
+.profile-links p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    text-decoration: none;
+    color: white;
+    transition: transform 0.2s, background 0.3s;
+}
+
+.linkedin {
+    background: #0A66C2;
+}
+
+.linkedin:hover {
+    background: #084A8F;
+    transform: scale(1.05);
+}
+
+.github {
+    background: #333;
+}
+
+.github:hover {
+    background: #222;
+    transform: scale(1.05);
+}
+
+@media (max-width: 600px) {
+    .links {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+
+.projects-grid {
+    display: grid;
+    padding-bottom: 40px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+}
+
+@media (min-width: 1024px) {
+    .projects-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+.project-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-card img {
+    width: 100%;
+    height: 175px;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+    border-radius: 8px;
+}
+
+.project-card h2 {
+    color: #000;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 5px 0;
+}
+
+.project-card .project-description {
+    color: #424141;
+    font-size: 15px;
+    margin: 5px 0;
+}
+
+.project-text {
+    font-size: 15px;
+    margin: 0;
+}
+
+.project-text span {
+    font-weight: 600;
+}
+
+.project-card a {
+    margin-top: 5px;
+    margin-right: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.project-card a:hover {
+    color: #007bff;
+}
