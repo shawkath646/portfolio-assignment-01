@@ -117,10 +117,16 @@
     margin-bottom: 10px;
 }
 
-.contact-form-section p {
+.contact-form-section p:nth-child(1) {
     font-size: 16px;
     color: #555;
     margin-bottom: 20px;
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
 }
 
 .contact-form {
@@ -144,7 +150,6 @@
 
 .input-group input,
 .input-group textarea {
-    width: 100%;
     padding: 10px;
     font-size: 16px;
     border: 1px solid #ccc;
@@ -173,4 +178,65 @@
 .btn-submit:hover {
     background: linear-gradient(45deg, #512DA8, #311B92);
     transform: scale(1.05);
+}
+
+body.dark .contact-section {
+    color: #eee;
+}
+
+body.dark .contact-section h2 {
+    color: #caa9ff;
+}
+
+body.dark .contact-section p {
+    color: #bbb;
+}
+
+body.dark .contact-card {
+    background: rgba(255, 255, 255, 0.05);
+    color: #ddd;
+    box-shadow: 2px 2px 8px rgba(255, 255, 255, 0.05);
+}
+
+body.dark .contact-card:hover {
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+}
+
+body.dark .contact-form-section {
+    background: #222;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+}
+
+body.dark .contact-form-section h2 {
+    color: #caa9ff;
+}
+
+body.dark .contact-form-section p:nth-child(1) {
+    color: #ccc;
+}
+
+body.dark .input-group label {
+    color: #ccc;
+}
+
+body.dark .input-group input,
+body.dark .input-group textarea {
+    background: #333;
+    color: #eee;
+    border: 1px solid #555;
+}
+
+body.dark .input-group input:focus,
+body.dark .input-group textarea:focus {
+    border-color: #caa9ff;
+}
+
+body.dark .btn-submit {
+    background: linear-gradient(45deg, #9575cd, #7e57c2);
+    color: white;
+}
+
+body.dark .btn-submit:hover {
+    background: linear-gradient(45deg, #7e57c2, #5e35b1);
 }

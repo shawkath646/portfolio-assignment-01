@@ -34,6 +34,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/index.css">
 </head>
@@ -43,7 +44,13 @@
         <nav>
             <div class="nav-container">
                 <a href="index.html" class="nav-branding">Portfolio</a>
-                <ul class="nav-items">
+
+                <div class="nav-controls">
+                    <button id="darkModeToggle" aria-label="Toggle dark mode"><i class="fas fa-moon"></i></button>
+                    <button id="menuToggle" aria-label="Toggle menu"><i class="fas fa-bars"></i></button>
+                </div>
+
+                <ul class="nav-items" id="navItems">
                     <li class="nav-item active"><a href="index.html">Home</a></li>
                     <li class="nav-item"><a href="about.html">About</a></li>
                     <li class="nav-item"><a href="projects.html">Projects</a></li>
@@ -53,9 +60,10 @@
         </nav>
     </header>
 
-    <main class="container">
-        <section class="intro">
+    <main id="#top" class="container">
+        <section class="intro animate-on-scroll">
             <div class="intro-text">
+                <h1 id="greeting-text"></h1>
                 <h1>Welcome to my portfolio website <span>&lt;&gt;SHAWKAT HOSSAIN MARUF&lt;/&gt;</span></h1>
                 <p>Owner & CEO, SH Cloud Burst Labs | Full-stack Web Developer | Desktop and Android App Developer</p>
             </div>
@@ -64,7 +72,7 @@
             </div>
         </section>
         <a href="mailto:shawkath646@gmail.com" target="_blank" class="cta-button">Hire Me!</a>
-        <section class="about-me">
+        <section class="about-me animate-on-scroll">
             <h2>Brief Introduction</h2>
             <p>
                 Hi! I am a 21-year-old student currently studying Computer Science and Engineering at <a
@@ -76,9 +84,10 @@
                 <a href="about.html">View more >></a>
             </p>
         </section>
+        <button id="backToTopBtn"><i class="fas fa-arrow-up"></i></button>
     </main>
 
-
+    <script type="text/javascript" src="js/script.js"></script>
 </body>
 
 </html>

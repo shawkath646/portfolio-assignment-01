@@ -116,3 +116,42 @@
         font-size: 1rem;
     }
 }
+
+body.dark .intro-text h1 {
+    color: #f0f0f0;
+}
+
+body.dark .intro-text span {
+    color: #5ecbff;
+}
+
+body.dark .intro-text p {
+    color: #ccc;
+}
+
+body.dark .cta-button {
+    background: linear-gradient(45deg, #1c7c39, #19967d);
+    color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+body.dark .cta-button:hover {
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.6);
+}
+
+body.dark .about-me h2 {
+    color: #d4a6f0;
+}
+
+body.dark .about-me p {
+    color: #ccc;
+}
+
+body.dark .about-me a {
+    color: #79baff;
+}
+
+body.dark .about-me a:hover {
+    color: #56a0e0;
+}
+
